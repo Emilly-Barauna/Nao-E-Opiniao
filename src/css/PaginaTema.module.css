@@ -1,0 +1,299 @@
+.pagina {
+  min-height: 70vh;
+  padding: 0 7% 64px;
+  background-color: #faf6f0;
+  color: #173f47;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.apresentacao {
+  max-width: 1280px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.75fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.apresentacao h1 {
+  margin: 0 0 20px;
+  color: #173f47;
+  font-size: clamp(52px, 5vw, 76px);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.apresentacao p {
+  max-width: 720px;
+  margin: 0;
+  color: #40585d;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.secao {
+  max-width: 820px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #d8d0c6;
+}
+
+.secao h2 {
+  margin: 0 0 14px;
+  color: #173f47;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.1;
+}
+
+.secao p {
+  max-width: 720px;
+  margin: 0;
+  color: #40585d;
+  font-size: 19px;
+  line-height: 1.6;
+}
+.areaGrafico {
+  min-height: 240px;
+  margin-top: 24px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #b8aaa0;
+  border-radius: 10px;
+  background-color: #f4ece5;
+}
+
+.areaGrafico p {
+  margin: 0;
+  color: #6d7778;
+  font-size: 16px;
+}
+.fontes {
+  margin: 0;
+  padding-left: 20px;
+  color: #40585d;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.fontes li::marker {
+  color: #d75b45;
+}
+.lista {
+  max-width: 720px;
+  margin: 0;
+  padding-left: 24px;
+  color: #40585d;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.lista li::marker {
+  color: #d75b45;
+}
+
+.imagemHero img {
+  width: min(100%, 280px);
+  height: auto;
+  display: block;
+}
+
+.imagemHero img {
+  width: min(100%, 330px);
+  height: auto;
+  display: block;
+}
+.bannerTema {
+  width: 100vw;
+  height: 500px;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+.bannerTema img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.listaManifestacoes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.cardManifestacao {
+  overflow: hidden;
+  padding: 0 18px 20px;
+  border: 1px solid #d8d0c6;
+  border-radius: 10px;
+  background-color: #fffaf5;
+}
+
+.cardManifestacao h3 {
+  margin: 0 -18px 16px;
+  padding: 11px 18px;
+  background-color: #e8a33d;
+  color: #173f47;
+  font-size: 23px;
+  line-height: 1.1;
+}
+
+.cardManifestacao:nth-child(2) h3 {
+  background-color: #d75b45;
+  color: #fffaf5;
+}
+
+.cardManifestacao p {
+  margin: 0;
+  color: #40585d;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .listaManifestacoes {
+    grid-template-columns: 1fr;
+  }
+
+  .cardManifestacao {
+    min-height: auto;
+  }
+}
+.areaGrafico {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.7fr) 1.3fr;
+  align-items: center;
+  gap: 34px;
+  min-height: 210px;
+  padding: 34px 38px;
+  border: none;
+  border-radius: 10px;
+  background-color: #173f47;
+}
+
+.areaGrafico strong {
+  color: #fffaf5;
+  font-size: clamp(58px, 7vw, 104px);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.areaGrafico p {
+  max-width: 580px;
+  margin: 0;
+  color: #fffaf5;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.impacto {
+  margin: 18px 0 0;
+  padding: 24px 28px;
+  border-left: 8px solid #d75b45;
+  border-radius: 0 10px 10px 0;
+  background-color: #f2dfd7;
+  color: #173f47;
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+@media (max-width: 800px) {
+  .areaGrafico {
+  grid-template-columns: 1fr;
+  gap: 18px;
+  min-height: auto;
+  padding: 28px 24px;
+}
+
+  .impacto {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+.areaGrafico {
+  grid-template-columns: minmax(300px, 0.8fr) 1.2fr;
+  gap: 28px;
+}
+
+.areaGrafico strong {
+  font-size: 64px;
+}
+
+.areaGrafico p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.dadosCards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.areaGrafico,
+.impacto {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.7fr) 1.3fr;
+  align-items: center;
+  gap: 18px;
+  min-height: 130px;
+  margin: 0;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.areaGrafico {
+  background-color: #173f47;
+}
+
+.areaGrafico strong,
+.impacto strong {
+  font-size: clamp(42px, 4vw, 64px);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+}
+
+.areaGrafico strong {
+  color: #fffaf5;
+}
+
+.areaGrafico p,
+.impacto p {
+  max-width: none;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.areaGrafico p {
+  color: #fffaf5;
+}
+
+.impacto {
+  background-color: #f2dfd7;
+  border-left: none;
+}
+
+.impacto strong {
+  color: #d75b45;
+}
+
+.impacto p {
+  color: #173f47;
+}
+
+@media (max-width: 800px) {
+  .dadosCards {
+    grid-template-columns: 1fr;
+  }
+
+  .areaGrafico,
+  .impacto {
+    grid-template-columns: 130px 1fr;
+  }
+}

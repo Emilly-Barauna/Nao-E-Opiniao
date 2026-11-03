@@ -1,0 +1,103 @@
+.temas {
+  padding: 58px 7% 78px;
+  color: #173f47;
+  background-color: #fffdfa;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.cabecalho {
+  margin-bottom: 30px;
+}
+
+.cabecalho h2 {
+  width: 100%;
+  margin: 0;
+  font-size: clamp(30px, 2.6vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  white-space: nowrap;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  min-height: 215px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #faf6f0;
+  border: 1px solid #ded7cd;
+  border-radius: 10px;
+}
+
+.card h3,
+.card p,
+.card a {
+  position: relative;
+  z-index: 1;
+  max-width: 58%;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.card p {
+  margin: 0;
+  color: #40585d;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.card a {
+  margin-top: auto;
+  padding-top: 18px;
+  color: #d75b45;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.imagemTema {
+  width: 54%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  object-fit: cover;
+  object-position: right bottom;
+}
+
+@media (max-width: 1000px) {
+  .lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cabecalho h2 {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 700px) {
+  .temas {
+    padding: 48px 5% 58px;
+  }
+}
+
+@media (max-width: 500px) {
+  .lista {
+    grid-template-columns: 1fr;
+  }
+}
